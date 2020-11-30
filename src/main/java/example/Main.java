@@ -10,7 +10,5 @@ public class Main {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMain.class);
         Customer x = ctx.getBean(Customer.class);
         System.out.println(x.getId());
-
     }
-
 }
