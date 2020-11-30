@@ -1,6 +1,6 @@
 package example;
 
-import example.beans.Customer;
+import example.beans.Account;
 import example.configuration.SpringMain;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(SpringMain.class);
-        Customer x = ctx.getBean(Customer.class);
-        System.out.println(x.getId());
+        Account a = ctx.getBean(Account.class);
+        a.getBalance();
     }
 }
