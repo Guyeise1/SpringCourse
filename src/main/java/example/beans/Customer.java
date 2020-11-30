@@ -1,5 +1,6 @@
 package example.beans;
 
+import example.annotations.SampleAnnotation;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import java.util.UUID;
 @Component
+@SampleAnnotation
 public class Customer {
     private String firstName;
     private String lastName;
